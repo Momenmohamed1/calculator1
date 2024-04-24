@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <title>calculator</title>
+</head>
+
+<body>
+    <div class="container bg-black">
+        <form action="">
+            <div class="row ">
+                <div class="col-12 m-1">
+                    <input id="inp" name="display" class="d-block DisplayInput col-7 p-1" type="text"
+                        placeholder="please enter number" />
+                </div>
+                <div class="container2">
+                    <div class="col-8 m-auto">
+                        <input class="btn btn-dark col-2 m-1" onclick="numbers(this.id)" type="button" value="AC" id="AC" />
+                        <input class="btn btn-dark col-2 m-1" onclick="display.value = display.value.toString().slice(0,-1)" type="button" value="DEL" id="DEL" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="%" onclick="display.value += '%'" id="%" />
+                        <input class="btn btn-dark col-4 m-1" onclick="display.value += '/' " type="button" value="/" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="7" onclick="numbers(this.id)" id="7" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="8" onclick="numbers(this.id)" id="8" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="9" onclick="numbers(this.id)" id="9" />
+                        <input class="btn btn-dark col-4 m-1" type="button" value="*" onclick="display.value += '*' " />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="4" onclick="numbers(this.id)" id="4" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="5" onclick="numbers(this.id)" id="5" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="6" onclick="numbers(this.id)" id="6" />
+                        <input class="btn btn-dark col-4 m-1" type="button" value="-" onclick="numbers(this.id)" id="-" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="1" onclick="numbers(this.id)" id="1" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="2" onclick="numbers(this.id)" id="2" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="3" onclick="numbers(this.id)" id="3" />
+                        <input class="btn btn-dark col-4 m-1" type="button" value="+" onclick="numbers(this.id)" id="+" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="0" onclick="numbers(this.id)" id="0" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="00" onclick="numbers(this.id)" id="00" />
+                        <input class="btn btn-dark col-2 m-1" type="button" value="." onclick="numbers(this.id)" id="." />
+                        <input class="btn btn-dark col-4 m-1" type="button" value="=" onclick="display.value = eval(display.value)"
+                            id="eqal" />
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

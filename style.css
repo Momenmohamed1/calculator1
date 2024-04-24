@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black !important;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.DisplayInput{
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translateX(-45px);
+    outline: none !important;
+    background: transparent;
+    border: 3px solid #424649;
+    color: white;
+    border-radius: 10px;
+}
